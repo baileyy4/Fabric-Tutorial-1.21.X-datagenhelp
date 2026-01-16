@@ -1,6 +1,7 @@
 package net.bailey;
 
 import net.bailey.block.ModBlocks;
+import net.bailey.item.ModItemGroups;
 import net.bailey.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
@@ -14,6 +15,8 @@ public class TutorialMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+        ModItemGroups.registerItemGroups();
+
         ModItems.registerModItems();
         ModBlocks.registerModBlocks();
 	}
